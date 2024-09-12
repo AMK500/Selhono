@@ -165,6 +165,12 @@ header .btn-primary,
 
 /* #region HERO */
 
+.hero-section {
+  position: relative;
+  background-color: #FFF;
+  z-index: 2;
+}
+
 .hero-section .container {
   position: relative;
   overflow: hidden;
@@ -288,6 +294,9 @@ header .btn-primary,
 
 .section-what {
   padding: 180px 0;
+  position: relative;
+  background-color: #FFF;
+  z-index: 2;
 }
 
 .section-what .row,
@@ -535,9 +544,9 @@ header .btn-primary,
 
 
 
-/* _______________________F O U R________________________ */
+/* _______________________w a n n a_______________________ */
 
-/* #region FOUR */
+/* #region wanna */
 
 .section-wanna {
   background-image: url(../img/Rectangle\ 10.png);
@@ -596,100 +605,7 @@ header .btn-primary,
   box-shadow: 0px 10px 20px 0px #1F2022;
 }
 
-@media (max-width: 1130px) {
-
-
-  
-}
-
-@media (max-width: 642px) {
-
-
-  
-}
-
-/* #endregion FOUR */
-
-
-
-
-/* _______________________F I V E________________________ */
-
-/* #region five */
-
-
-
-
-
-
-@media (max-width: 925px) {
-
-
-  
-}
-/* #endregion five */
-
-
-
-
-/* ________________________S I X_________________________ */
-
-/* #region SIX */
-
-
-
-
-
-
-@media (max-width: 965px) {
-
-
-
-}
-
-
-/* #endregion SIX */
-
-
-
-
-/* ________________________F O R M_______________________ */
-
-/* #region FORM */
-
-
-
-
-
-
-
-/* #endregion FORM */
-
-
-
-
-/* _______________________E I G H T______________________ */
-
-/* #region EIGHT */
-
-
-
-
-
-
-@media (max-width: 1185px) {
-
-
-
-}
-
-@media (max-width: 620px) {
-
-
-
-}
-
-/* #endregion EIGHT */
+/* #endregion wanna */
 
 
 
@@ -699,6 +615,99 @@ header .btn-primary,
 /* #region FOOTER */
 
 
+/* #region TOP-FOOTER */
+
+.top-footer {
+  margin-top: 90px;
+}
+
+.top-footer .d-flex {
+  justify-content: space-between;
+  gap: 60px 15px;
+  flex-wrap: wrap;
+}
+
+.top-footer .div-1{
+  gap: 54px;
+}
+
+.top-footer .div-1 p {
+  margin-top: 18px;
+  max-width: 393px;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  margin-bottom: 31px;
+}
+
+.top-footer .div-1 .d-flex {
+  gap: 50px;
+  flex-direction: row;
+}
+
+.top-footer .div-2 h3 {
+  color: #000;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+
+.top-footer .div-2 .d-flex {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-footer .div-2 .d-flex li a {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+}
+
+.top-footer .div-2 .d-flex a:hover {
+  color: #000;
+}
+
+.top-footer .div-4 h3 {
+  color: #000;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+
+.top-footer .div-4 .d-flex {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-footer .div-4 .d-flex li {
+  max-width: 258px;
+}
+
+.top-footer .div-4 .d-flex li a {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+}
+
+.top-footer .div-4 .d-flex a:hover {
+  color: #000;
+}
 
 
 
@@ -709,10 +718,77 @@ header .btn-primary,
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 500px) {
 
-
+  .top-footer .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
 }
 
+/* #endregion TOP-FOOTER */
+
+
+
+/* #region Bottom-FOOTER */
+
+.bottom-footer {
+  margin-top: 53px;
+  margin-bottom: 90px;
+}
+
+.bottom-footer p {
+  color: #4D5053;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+/* #endregion Bottom-FOOTER */
+
+
 /* #endregion FOOTER */
+
+
+
+
+/* #region Keyboard */
+
+.Keyboard-Double-Arrow-Up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.Keyboard-Double-Arrow-Up a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.Keyboard-Double-Arrow-Up a:hover {
+  border: 2px solid #D8A876;
+}
+
+.Keyboard-Double-Arrow-Up a svg path {
+  fill: #000;
+  transition: all 0.3s;
+}
+
+.Keyboard-Double-Arrow-Up a:hover svg path {
+  fill: #D8A876;
+}
+
+/* #endregion Keyboard */
