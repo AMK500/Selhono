@@ -405,7 +405,14 @@ header .btn-primary,
   padding-bottom: 120px;
 }
 
+.section-articles .row {
+  justify-content: center;
+  row-gap: 30px;
+}
+
 .section-articles article {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   width: 387.333px;
