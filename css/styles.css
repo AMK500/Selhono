@@ -269,23 +269,118 @@ header .btn-primary,
 
 }
 
+@media (min-width: 540px) {
+
+  .hero-section {
+    margin-top: 100px;
+  }
+
+}
+
 /* #endregion HERO */
 
 
 
 
-/* ________________________T W O_________________________ */
+/* _______________________w h a t________________________ */
 
-/* #region TWO */
+/* #region what */
+
+.section-what {
+  padding: 180px 0;
+}
+
+.section-what .row,
+.section-result .row {
+  align-items: center;
+  row-gap: 50px;
+}
+
+.section-what .row .col-xl-7 img,
+.section-result .row .col-xl-7 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
+.section-what .item-text-what, 
+.section-result .item-text-result {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
+.section-what .item-text-what h3, 
+.section-result .item-text-result h3 {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
 
+.section-what .item-text-what p, 
+.section-result .item-text-result p {
+  max-width: 490px;
+  color: #4D5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
 
-@media (max-width: 1244px) {
+.section-what .item-text-what a, 
+.section-result .item-text-result a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  margin-right: auto;
+  display: flex;
+  padding: 26px 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #292F36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
 
+.section-result .img-2 {
+  display: none;
+}
 
+@media (max-width: 1200px) {
+
+  .section-what .item-text-what,
+  .section-result .item-text-result {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-what .item-text-what a, 
+  .section-result .item-text-result a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-result .img-1 {
+    display: none;
+  }
+
+  .section-result .img-2 {
+    display: block;
+  }
 
 }
 
@@ -296,15 +391,115 @@ header .btn-primary,
 }
 
 
-/* #endregion TWO */
+/* #endregion what */
 
 
 
 
-/* ______________________T H R E E_______________________ */
+/* _______________________articles_______________________ */
 
-/* #region THREE */
+/* #region articles */
 
+.section-articles {
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
+
+.section-articles article {
+  display: flex;
+  flex-direction: column;
+  width: 387.333px;
+  padding: 21px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+  transition: all 0.3s;
+}
+
+.section-articles article:hover {
+  background: #F4F0EC;
+}
+
+.section-articles article .text-article .d-flex svg circle,
+.section-articles article .text-article .d-flex svg path {
+  transition: all 0.2s;
+}
+
+.section-articles article:hover .text-article .d-flex svg circle,
+.section-articles article:hover .text-article .d-flex svg path {
+  fill: #C76904;
+}
+
+.img-article {
+  position: relative;
+  border-radius: 45px 45px 0px 0px;
+  overflow: hidden;
+  max-width: 340px;
+  height: 290px;
+  z-index: 0;
+}
+
+.img-article .label {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+}
+
+.img-article .label h6 {
+  position: absolute;
+  z-index: 3;
+  bottom: 8px;
+  left: 8px;
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+
+.text-article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.text-article h4 {
+  display: flex;
+  width: 305px;
+  height: 70px;
+  justify-content: center;
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+
+.text-article .d-flex {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.text-article .d-flex p {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
 
 
 
@@ -323,7 +518,7 @@ header .btn-primary,
 
 }
 
-/* #endregion THREE */
+/* #endregion articles */
 
 
 
