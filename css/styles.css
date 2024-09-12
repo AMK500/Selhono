@@ -11,10 +11,18 @@ ul {
   margin: 0;
 }
 
+p, ul, li, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1210px
+}
 
 
 
@@ -157,24 +165,109 @@ header .btn-primary,
 
 /* #region HERO */
 
+.hero-section .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .container img{
+  width: 100%;
+}
+
+.text-hero {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+}
+
+.text-hero h1 {
+  max-width: 690px;
+  font-family: "DM Serif Display";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%
+}
+
+.text-hero p {
+  max-width: 470px;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.text-hero a {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  width: 272px;
+  display: flex;
+  padding: 26px 49px 26px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #CDA274;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
 
 
 
 
+@media (max-width: 810px) {
 
+  .text-hero h1 {
+    font-size: 32px;
+  }
+  
+  .text-hero p {
+    font-size: 12px;
+  }
 
-@media (max-width: 1080px) {
+  .text-hero a {
+    height: 46px;
+    padding: 16px 32px;
+  }
+  
+}
 
+@media (max-width: 540px) {
 
+  .text-hero{
+    top: 10%;
+    left: 10%;
+    right: 10%;
+  }
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 440px) {
 
+  .text-hero h1 {
+    font-size: 25px;
+  }
 
+  .text-hero{
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
 
 }
-
 
 /* #endregion HERO */
 
