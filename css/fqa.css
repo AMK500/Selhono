@@ -1,0 +1,121 @@
+/* _______________________H E R O________________________ */
+
+/* #region HERO */
+
+.hero-section {
+  position: relative;
+  background-image: url(../img/Rectangle\ 21.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  height: 356px;
+  margin-bottom: 139px;
+}
+
+.hero-section .d-flex {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .d-flex h1 {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DM Serif Display";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+
+/* #endregion HERO */
+
+
+
+
+/* _______________________project________________________ */
+
+/* #region project */
+
+.section-project {
+  position: relative;
+  z-index: 2;
+  background-color: #FFF;
+  margin-bottom: 120px;
+}
+
+.section-project .row {
+  align-items: center;
+  row-gap: 50px;
+}
+
+.section-project .row img {
+  border-radius: 40px;
+  width: 100%;
+}
+
+.section-project .row .d-flex {
+  justify-content: center;
+}
+
+.section-project h2 {
+  color: #292F36;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+}
+
+.section-project .accordion-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.section-project .accordion-header {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+}
+
+.accordion-button {
+  font-size: 25px;
+}
+
+#accordionExample {
+  border-radius: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+}
+
+.accordion-body h4{
+  max-width: 585px;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+/* #endregion project */

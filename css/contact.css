@@ -1,0 +1,174 @@
+
+/* _______________________H E R O________________________ */
+
+/* #region HERO */
+
+.hero-section {
+  position: relative;
+  background-image: url(../img/Rectangle\ 20.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  height: 524px;
+  margin-bottom: 105px;
+}
+
+/* #endregion HERO */
+
+
+
+
+/* _______________________F O R M________________________ */
+
+/* #region FORM */
+
+.section-form {
+  margin-bottom: 100px;
+  position: relative;
+  background-color: #FFF;
+  z-index: 2;
+}
+
+.section-form .row {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 50px;
+}
+
+.section-form h2 {
+  max-width: 683px;
+  color: #292F36;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+}
+
+.section-form .div-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-form .div-item span {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-form .div-item .d-flex {
+  margin-top: 15px;
+  margin-left: 15px;
+  gap: 35px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+form .d-flex {
+  width: 100%;
+  gap: 39px;
+}
+
+form .d-flex input {
+  display: flex;
+  flex-grow: 1;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  padding-bottom: 13px;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+form textarea {
+  height: 175px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+form button {
+  width: 221px;
+  display: flex;
+  padding: 26px 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #292F36;
+  color: #FFF;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  margin-left: auto;
+}
+
+
+@media (max-width: 600px) {
+
+  form .d-flex {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .section-form h2 {
+    font-size: 35px;
+  }
+
+  form button {
+    margin-left: 0;
+  }
+
+  .section-form .div-item {
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .section-form .div-item {
+    align-items: center;
+  }
+
+}
+
+
+/* #endregion FORM */
